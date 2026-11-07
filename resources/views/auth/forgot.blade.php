@@ -1,0 +1,2 @@
+@extends('layouts.app')
+@section('content')<div class="auth card"><div class="eyebrow">CAMPUSGIG</div><h1>Reset your password</h1><form method="post" action="/forgot-password">@csrf<label>Email<input name="email" type="email" value="{{ old('email') }}" required></label><button type="submit">Send reset link</button></form><p style="margin-top:20px"><a href="{{ route('login') }}">Back to login</a></p></div>@endsection
